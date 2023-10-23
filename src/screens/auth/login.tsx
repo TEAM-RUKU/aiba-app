@@ -97,7 +97,6 @@ const styles = StyleSheet.create({
   buttonText: {
     fontFamily: "Pretendard-Medium",
     fontSize: 14,
-    letterSpacing: 14 * 0.02,
     color: globalColors.grade7,
   },
 });
