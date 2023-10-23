@@ -1,0 +1,3 @@
+build/*
+src/api/*
+src/schemas/*

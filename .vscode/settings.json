@@ -1,0 +1,14 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "compile-hero.disable-compile-files-on-did-save-code": true
+}
