@@ -2,13 +2,12 @@ import type { KakaoOAuthToken } from "@react-native-seoul/kakao-login";
 
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { TouchableOpacity } from "react-native-gesture-handler";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { login } from "@react-native-seoul/kakao-login";
 
 import { useAuthControllerLogin } from "@app/api/endpoints/auth/auth";
-import { Text, SvgIcon } from "@app/components";
+import { Text, Button } from "@app/components";
 import { AuthContext } from "@app/context/auth";
 import { globalColors } from "@app/resources/styles";
 import { log } from "@app/utils/logging";
@@ -55,10 +54,11 @@ const Login = () => {
           AIBA<Text style={styles.brandDot}>.</Text>
         </Text>
       </View>
-      <TouchableOpacity style={styles.button} onPress={kakaoLogin}>
-        <SvgIcon name="LoginButtonSvg" fill={globalColors.grade7} />
-        <Text style={styles.buttonText}>카카오톡으로 로그인</Text>
-      </TouchableOpacity>
+      <Button
+        title="카카오톡으로 로그인"
+        icon="LoginButtonSvg"
+        onPress={kakaoLogin}
+      />
     </View>
   );
 };
@@ -81,23 +81,6 @@ const styles = StyleSheet.create({
   },
   brandDot: {
     color: globalColors.active,
-  },
-  button: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: 8,
-    paddingVertical: 14,
-    paddingHorizontal: 20,
-    backgroundColor: globalColors.grade2,
-    borderWidth: 1,
-    borderColor: globalColors.grade3,
-    borderRadius: 16,
-  },
-  buttonText: {
-    fontFamily: "Pretendard-Medium",
-    fontSize: 14,
-    color: globalColors.grade7,
   },
 });
 

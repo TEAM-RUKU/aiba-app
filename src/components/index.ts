@@ -5,3 +5,5 @@ export { default as Text } from "./text";
 export { default as Header } from "./header";
 export { default as Screen } from "./screen";
 export { default as Section } from "./section";
+export { default as Button } from "./button";
+export { default as Live } from "./live";

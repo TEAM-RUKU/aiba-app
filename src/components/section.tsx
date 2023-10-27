@@ -10,24 +10,28 @@ interface SectionProps {
   title: string;
   buttonTitle: string;
   buttonIcon: SvgIconName;
+  gap?: number;
   children: React.ReactNode;
 }
 const Section: React.FC<SectionProps> = ({
   title,
   buttonTitle,
   buttonIcon,
+  gap,
   children,
 }) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerText}>{title}</Text>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          hitSlop={{ top: 16, bottom: 16, left: 16, right: 16 }}>
           <SvgIcon name={buttonIcon} fill={globalColors.grade7} />
           <Text style={styles.buttonTitle}>{buttonTitle}</Text>
         </TouchableOpacity>
       </View>
-      {children}
+      <View style={{ gap }}>{children}</View>
     </View>
   );
 };

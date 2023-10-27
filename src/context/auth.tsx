@@ -191,7 +191,7 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         return Promise.reject(err);
       }
 
-      // error message
+      // TODO: error message
 
       return Promise.reject(err);
     };

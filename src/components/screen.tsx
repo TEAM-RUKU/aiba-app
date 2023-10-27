@@ -39,8 +39,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingBottom: 36,
     gap: 40,
+    flexGrow: 1,
   },
   list: {
+    flex: 1,
     gap: 52,
   },
 });
