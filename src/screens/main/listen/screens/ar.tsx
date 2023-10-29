@@ -51,7 +51,7 @@ const AR = () => {
 
   return (
     <View style={styles.container}>
-      <Live url="http://192.168.219.112:8000/v1/stream/yolo" />
+      <Live url="http://192.168.2.2:8000/v1/stream/yolo" />
       <View
         style={[
           styles.menu,

@@ -12,7 +12,7 @@ const Live: React.FC<LiveProps> = ({ url, refresh }) => {
       key={refresh}
       scrollEnabled={false}
       source={{
-        html: `<style>*{padding: 0; margin:0;}</style><div style="width: 100%; height: 100%; background-size: cover; background-image: url(${url});" />`,
+        html: `<style>*{padding: 0; margin:0;}</style><div style="width: 100%; height: 100%; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat; background-image: url(${url});" />`,
       }}
       style={styles.video}
       startInLoadingState={true}

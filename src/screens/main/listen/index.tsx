@@ -33,7 +33,7 @@ const Listen = () => {
         gap={16}>
         <View style={styles.depth}>
           <Live
-            url="http://192.168.219.112:8000/v1/stream/tdoa"
+            url="http://192.168.2.2:8000/v1/stream/tdoa"
             refresh={refresh}
           />
         </View>
